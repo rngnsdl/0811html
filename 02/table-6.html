@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td{
+            border: 1px solid #ff8010; /* RGB 16진수의 조합 */
+        }
+        th, td{
+            width: 80px ; /*셀의 너비*/
+            padding: 10px; /*셀 테두리와 내용 사이의 간격(패딩)*/
+        }
+        th{
+            background-color: #fe2300;
+        }
+        thead, tfoot{
+            background-color: #eeeeee;/*thead와 tfoot의 배경색 */
+        }
+    </style>
+    </head>
+<body>
+    <table>
+        <caption>제주특별자치도 학교 현황 (2015.04.01 기준)</caption>
+        <!-- id = #이고 class는 .dlek -->
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th class="b">유치원</th>
+            <td>117</td>
+            <td>252</td>
+            <td>5,547</td>
+            <td>474</td>
+            </tr>
+            <tr>
+                <th>초등학교</th>
+                <td>111</td>
+                <td>222</td>
+                <td>3,235</td>
+                <td>2,172</td>
+                </tr>
+                
+            <tr>
+                <th>중학교</th>
+                <td>116</td>
+                <td>232</td>
+                <td>7,747</td>
+                <td>5,374</td>
+                </tr>
+                
+            <tr>
+                <th>고등학교</th>
+                <td>87</td>
+                <td>151</td>
+                <td>4,210</td>
+                <td>7,111</td>
+                </tr>
+                
+            <tr>
+                <th>특수학교</th>
+                <td>56</td>
+                <td>92</td>
+                <td>77</td>
+                <td>54</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>300</td>
+                <td>3,516</td>
+                <td>99,478</td>
+                <td>6,201</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

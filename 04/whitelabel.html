@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Label 태그 사용</title>
+    <style>
+        ul{
+            list-style: none;
+
+        }
+        li{
+            margin: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <h3> 수강 분야(다수 선택 가능) </h3>
+        <ul>
+            <li><input type="checkbox" value="grm">문법</li>
+            <li><input type="checkbox" value="wr">작문</li>
+            <li><input type="checkbox" value="rd">독해</li>
+        </ul>
+        <h3>수강 과목(1개만 선택가능) </h3>
+        <ul>
+            <li><label for=""><input type="radio" name="subject" value="eng">영어회화</label></li>
+            <li><label for=""><input type="radio" name="subject" value="ch">중국회화</label></li>
+            <li><label for=""><input type="radio" name="subject" value="jp">일본회화</label></li>
+        </ul>
+    </form>
+    <input type="number">
+    <input type="color">
+    <input type="email">
+    <input type="phone">
+    <input type="submit" value ="전송">
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+table, td, th{
+  border: 1px dashed rgb(22, 183, 231);
+}
+td{
+    color:blueviolet;
+}
