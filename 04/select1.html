@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹폼</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+
+
+            $(".reg").css({
+                "color": "red",
+                "font-size":"20px"}); //클래스가 reg인 것을 찾아서 색상으로 빨간색으로 적용해라 
+            $("legend").css({
+            "font-size": "20px;",
+            "font-weight": "25px",
+            "color":"yellow"
+            })
+        });
+        })
+    </script>
+    <style>
+        body{
+            background-color: #848563;
+        }
+        form fieldset{
+            margin-bottom: 45px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+        legend{
+            font-size: 15px;
+            font-weight: 600;
+            color:whitesmoke;
+        }
+        .reg{
+            font-size: 20px;
+            color:blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>여름 방학 특강 신청</h1>
+        <fieldset>
+            <legend>수강 신청인</legend>
+            <ul>
+                <li>
+                    <label for="id" class="reg">학번</label>
+                    <input type ="text" id="name" autofocus>
+                </li>
+                <li>
+                    <label for="id" class="reg">이름</label>
+                    <input type ="text" id="name">
+                </li>
+                <li>
+                    <label for="class">학과</label><!-- 학급의 클래스 -->
+                    <select size="1" id="class" multiple>
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="industry">산업공학과</option>
+                        <option value="electronic">전기전자공학과</option>
+                        <option value="computer">컴퓨터공학과</option>
+                        <option value=chemical>화학 공학과</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <button> 이것을 누르면 바뀝니다.</button>
+    <h3>이것은 테스트</h3>
+</body>
+</html>
