@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script>
+        var globalV ="전역 변수";
+
+        $(document).ready(function(){ 
+
+            var local1 ="지역 변수";
+            func1(100,200); //아래에 정의된 함수를 호출하여 실행한다.
+            //여기에서 이벤트는 window가 열리면(load) 
+            //자동으로 익명함수가 실행되고 실행되는 코드를 { } 안에
+            //개발자가 원하는 코드를 추가한다.
+        });
+
+        function func1(num1, num2){
+            var local1="지역 변수";
+            document.write("매개변수 num1="+num1+",num2="+num2);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

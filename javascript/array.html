@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var myArray=[1,2,3,"김씨","이씨",{1:"김씨"},{2:"이씨"}]; //배열 생성
+        //{ : }//리터럴 객체. key와 value가 있는.
+        var literalObject ={1:"김씨","장씨":7,"서씨 ":9}
+        console.log(literalObject);
+        console.log(literalObject[1]);
+        console.log(myArray[0]); //배열의 0번재 값을 출력함
+        for(var i=0; i<myArray.length; i++)
+            console.log(myArray[i]);
+        myArray.push(7);
+        myArray.push(8);
+        var result = myArray.pop(); //삭제한 정보를 result에 담음
+        console.log("첫번째"+result)
+        var result = myArray.pop(); //삭제한 정보를 result에 담음
+        console.log("두번째"+result);
+
+        //리터럴(literal)은 그냥 값
+        //1,2,3,"김씨","이씨" 이런것을 literal이라 하고
+        //literal 객체는 { }에 key:value 이렇게 쌍으로 ,로 구분하여 저장하는 것을 literal 객체라고 한다.
+        myArray.push({1:2,"김씨":9,"이씨":6,"장씨":[1,2,3,4,5]})
+        console.log(myArray);
+
+        var z = {1:2,
+        "김씨":9,
+        "이씨":6,
+        "장씨":[1,2,3,4,5],
+        3: {7:{"a":7, "b":9,"c":8}, 9:[1,2,3,4,5] }};
+        //z는 literal 객체이고 여기서 3은 key이고 value는 literal 객체이다.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

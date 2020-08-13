@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script>
+$(document).ready(function(){
+    var res="";
+    var a = ["00", "11", "33", "55", "66"];
+    setInterval(function(){
+        res+=a[parseInt(Math.random()*5)];
+    },100);
+    res1 ="#"+res;
+    setInterval(function(){
+        var result = parseInt(Math.random()*3);
+        $("p").css("color","result[a]");
+    },300)
+});
+</script>
+</head>
+<body>
+    <p>Click me too!</p>
+</body>
+</html>

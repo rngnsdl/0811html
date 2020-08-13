@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script>
+        var globalV ="전역 변수";
+
+        var a = function(i,j){//익명함수를 변수에 저장함
+            alert("두개의 매개변수를 더한 결과는 "+ (i+j));
+        }
+        a(3,4); //변수에 함수의 기능이 저장되어 있으므로 이때 호출하면 익명함수가 호출됨
+        //함수가 1급 객체이므로
+        //변수에 저장가능하고
+        //함수를 함수의 파라미터로 전달가능하고
+        //함수를 함수에서 반환할수 있음.
+        //자바스크립트는 함수형 언어.
+        //따라서 변수에 함수를 저장할 수 있다.
+        //파라미터안에 함수를 넣을 수 있고, 함수를 리턴시킬 수도 있음.
+
+        var b = function(i,j,k){
+            result=i+" "+j+ " "+k+"<br>";
+            document.write(result);
+        }
+
+        b("짱구","흰둥이","귀여워");
+
+        var avg=function(a,b){
+            document.write("두개의 평균을 구한 값은 "+ (a+b)/2)
+        }
+
+        avg(55,76);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

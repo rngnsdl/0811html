@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>첫작</title>
+    <style>
+        .tot{
+            color:yellow;
+        }
+        .a{
+            background-color: rgb(224, 62, 51);
+            font-size: 30px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script>
+        $(document).ready(function(){
+            $("#dselect").hide();
+            //$()이렇게 하면 jquery 객체가 되므로 jquery 라이브러리에서 제공하는 메서드 사용가능함.
+            // $("div").css("color","red")
+            // .css("border", "1px solid red");
+            $("button#press").click(function(){
+                $("#dselect").show();
+                $("p.a").text("누르지말랬지...");
+                $("div").css({"color":"red",
+                "border":"1px solid blue"});
+                $("p.a").css({"color":"red",
+                "font-weight":"bold",
+                "font-size":"100px",
+                "img src":"image/first.jpg",
+                "background":"#A50000"});
+                $(document).ready(function(){
+        });
+
+             });
+
+             $("button#clear").click(function(){
+                $("p.a").text("축하해요! 오늘 좋은일이 생길거에요");
+                $("div").css({"color":"red",
+                "border":"1px solid blue"});
+                $("p.a").css({"color":"green",
+                "font-weight":"bold",
+                "font-size":"40px",
+                "background":"yellow"});
+                    });
+                var tlist = $("ul.list li")
+                console.log();
+                tlist.each(function(i,j){ //반복문은 jquery에서 제공하는 each 메서드 활용
+                    console.log("index의 값은 "+ i, "데이터는 "+j);
+                    //i는 인덱스, j=그 인덱스 값의 데이터
+                    //즉, 아래에서 ul.list li의 index와 데이터 확인.
+                    if(i%2==0)
+                    $(this).addClass("tot");
+                    else    $(j).css("color","blue");
+            })
+
+            $("button").each(function(i,j){
+                if(i%2==0) $(this).addClass("a"); 
+            })  
+
+            $("button#remove").click(function(){
+                //button의 id가 remove인 요소를 찾아서, 버튼이 눌리면
+                console.log("여기가 눌리나"); //확인
+                tlist.each(function(i,j){
+                    console.log("each문이 실행되나?"+i+" "+j); //확인
+                $(j).removeClass("tot"); 
+            })
+        })  
+    });
+    </script>
+</head>
+<body>
+    <div>$$@#$#%@#%@#$!%!%^@$^$@%$#%@%@%$%&$%^$%^%^</div>
+     <p>함부로 행동하지 마시오.</p>
+     <p class="a">당신의 판단을 믿지말라..</p>
+     <ul class="list">
+        <li>오늘은 행복한 일요일</li>
+        <li>오늘은 행복한 월요일</li>
+        <li>오늘은 행복한 화요일</li>
+        <li>오늘은 행복한 수요일</li>
+        <li>오늘은 행복한 목요일</li>
+        <li>오늘은 행복한 금요일</li>
+        <li>오늘은 행복한 토요일</li>
+
+    </ul>
+     <button id = "press">누르지 마시오</button>
+     <div id = dselect>
+     <img src="1.jpg">
+    </div>
+     <button id = "clear">눌러보세요!</button>
+     <br>
+     <button id = "press">누르지 마시오</button>
+     <button id = "clear">눌러보세요!</button>
+     <br>
+     <button id="remove">제거</button>
+</body>
+</html>

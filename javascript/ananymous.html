@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var globalV ="전역 변수";
+
+        window.onload = function(){ //모든 변수(함수)에 on이 붙으면 event이다.
+        //이벤트가 발생하면 실행하는 함수를 event handler 라 한다.
+        //일반적으로 event는 사건이지만 프로그래밍에서 event는 어떤 사용자의 반응을 이야기함
+        //mouser가 눌리면(click)
+        //키보드가 눌리면
+        //마우스의 오른쪽 버튼이 눌리면
+        //위에서와 같이 window가 load되면 
+        //버튼이 눌리면(click)
+        //각각의 요소(elemet) 마다 해당하는 이벤트가 있다.
+        //마우스가 스크롤되면
+        //select option(drop down)에서 선택되면
+        //각각의 이벤트마다 이벤트 핸들러는 정의가 되어 있고
+        //개발자는 이벤트 핸들러에 기능을 추가하여 사용된다.
+
+            var local1 ="지역 변수";
+            func1(100,200); //아래에 정의된 함수를 호출하여 실행한다.
+            //여기에서 이벤트는 window가 열리면(load) 
+            //자동으로 익명함수가 실행되고 실행되는 코드를 { } 안에
+            //개발자가 원하는 코드를 추가한다.
+        }
+
+        function func1(num1, num2){
+            var local1="지역 변수";
+            document.write("매개변수 num1="+num1+",num2="+num2);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

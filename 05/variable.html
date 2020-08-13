@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test1(userName){ //함수정의 선언
+            var t ="그린 컴퓨터"; //t는 함수내에서만 가능한 지역(local) 변수
+            t += "입니다";
+            //함수가 종료되면 stack에서 사라짐
+            //파라미터로 전달되는 userName 도 지역변수
+            console.log("userName =" +userName+t);
+        }
+
+        var a=5; //변수 선언, 자료형은 따로 없다
+        console.log("a의 값은 "+ a);
+        var b = "홍길동";
+        console.log("b의 값은 "+b);
+        //synchronized
+        //asynchronized(비동기) //네트워크나 사용자 입력을 받아서 처리하는
+        //사용자 입력(event) 에 대한 처리함수(event handler)는 콜백함수로 구현함
+        var a = "김씨";
+        var b = 7;
+        test1(b); //함수 호출이 2번 일어남
+        test1(4,6);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
