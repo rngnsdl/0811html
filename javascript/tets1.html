@@ -6,10 +6,11 @@
 $(document).ready(function(){
     var res="";
     var a = ["00", "11", "33", "55", "66"];
+    for(var i=0; i<3; i++) res1 ="#"+a[parseInt(Math.random()*5)];
     setInterval(function(){
         res+=a[parseInt(Math.random()*5)];
     },100);
-    res1 ="#"+res;
+    
     setInterval(function(){
         var result = parseInt(Math.random()*3);
         $("p").css("color","result[a]");
