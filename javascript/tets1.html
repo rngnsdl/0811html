@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .p{
+            font-size: 20px;
+        }
+        </style>
 <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
 <script>
-$(document).ready(function(){
-    var res="";
-    var a = ["00", "11", "33", "55", "66"];
-    for(var i=0; i<3; i++) res1 ="#"+a[parseInt(Math.random()*5)];
-    setInterval(function(){
-        res+=a[parseInt(Math.random()*5)];
-    },100);
-    
-    setInterval(function(){
-        var result = parseInt(Math.random()*3);
-        $("p").css("color","result[a]");
-    },300)
-});
+var a=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+
+    $(document).ready(function(){
+        $("button").click(function(){
+
+        setInterval(function(){
+            var result="";
+            for(var i=0; i<6; i++){
+                result += a[parseInt(Math.random()*15)];
+            }
+                result="#"+result;
+                console.log(result);
+                $("p").css("color",result);
+            },500); //여기서 500은 시간. 0.5초 마다 실행함
+        })
+    });
 </script>
 </head>
 <body>
-    <p>Click me too!</p>
+    <p>I'm chainging!</p>
+    <button>do you want?</button>
 </body>
 </html>

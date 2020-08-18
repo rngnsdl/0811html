@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>six color change</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script>
+var a=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+var result;
+    $(document).ready(function(){
+        $("div").each(function(u,v){ //each는 jquery에서 반복문 사용함
+            //each 메서드의 파라미터는 이름없는 익명함수
+            //익명함수의 첫번째 파라미터는 index이고 두번째 파라미터는
+            //대상("div")의 객체를 가리킴
+            //자동으로 증가하면서 순회하여 내가 프로그래밍 한것으로 처리함.
+            console.log("인덱스는 ", u, "값은",v);
+            result="";
+            for(var i=0; i<6; i++){
+                result = result +a[parseInt(Math.random()*15)];
+            }
+            result ="#"+result;
+            console.log(result);
+            $(this).css("background-color", result);
+            //$(this).val("5");
+            //$(this).text((u+1)+"아름답다");
+        });
+    });
+</script>
+</head>
+<body>
+    <div>my color1</div>
+    <div>my color2</div>
+    <div>my color3</div>
+    <div>my color4</div>
+    <div>my color5</div>
+    <div>my color6</div>
+</body>
+</html>
